@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/blackjackStyles.css">
     <title>Blackjack</title>
 </head>
 <body>
-    <div class="wrapperContainer">
-        <h1 class="heading">Blackjack</h1>
-        <h2 class="gameInfo" id="cards">Cards : </h2>
-        <h2 class="gameInfo" id="sum">Sum : </h2>
-        <button class="buttons" id="startButton" onclick="gameStart()"><h1>Start</h1></button>
-        <button class="buttons" id="newCard" onclick="newCard()"><h1>New Card</h1></button>
-        <p id="result">want to Play the Game</p>
+    <div class="container shadow-lg rounded">
+        <h1 class="fs-1 fw-bolder user-select-all mb-4">Blackjack</h1>
+        <h2 class="fs-2 fw-bold user-select-none" id="cards">Cards : </h2>
+        <h2 class="fs-2 fw-bold user-select-none" id="sum">Sum : </h2>
+        <button id="startButton" class="btn btn-primary btn-sm mx-2 my-2" onclick="gameStart()"><h1>Start</h1></button>
+        <button id="newCard" class="btn btn-outline-dark btn-sm ml-2 my-2" onclick="newCard()"><h1>New Card</h1></button>
+        <p id="result" class=" user-select-none my-4 fs-3 fw-bold">Want to Play the Game? Click the Start Button</p>
+        <p id="playerProfile" class="user-select-none fs-3 fw-bold"></p>
     </div>
     <script src="javascript/blackjack.js"></script>  
     </body>
